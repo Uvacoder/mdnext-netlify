@@ -13,12 +13,12 @@ function NavLink({ children, ...props }) {
 
 export default function Navbar() {
   const { generateUrl, url, isLoading } = useImage({
-    cloudName: 'testing-hooks-upload',
+    cloudName: 'iarenotamnot',
   });
 
   React.useEffect(() => {
     generateUrl({
-      publicId: 'transparent_dom_logo',
+      publicId: 'kid-blue-hat',
       transforms: {
         height: 30,
         width: 30,
@@ -40,7 +40,7 @@ export default function Navbar() {
     >
       <Flex flexDirection="row" justifyContent="center" alignItems="center">
         <Image src={url} boxSize={30} alt="Navbar logo" />
-        <Text pl={3}>Domitrius Clark</Text>
+        <Text pl={3}>Lloyd Christmas</Text>
       </Flex>
       <Box>
         <ThemeTogglebutton />
